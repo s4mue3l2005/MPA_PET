@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Registrarse - PetCare Center</title>
+</head>
+<body>
+    <section id="register">
+        <div class="register-container">
+            <h2>Crear cuenta</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Nombre completo" required />
+                <input type="text" id="register-identity" placeholder="Identidad" required />
+                <input type="tel" id="register-phone" placeholder="Número de teléfono" required />
+                <input type="text" id="register-address" placeholder="Dirección" required />
+                <input type="email" id="register-email" placeholder="Correo electrónico" required />
+                <input type="password" id="register-password" placeholder="Contraseña" required />
+                <button type="submit">Registrarse</button>
+            </form>
+            <p class="register-switch">
+                ¿Ya tienes cuenta? <a href="#" id="register-go-login">Inicia sesión</a>
+            </p>
+            <p id="error-message" style="color: red; display: none; margin-top: 10px;"></p>
+            <p id="success-message" style="color: green; display: none; margin-top: 10px;"></p>
+        </div>
+    </section>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/auth.js"></script>
+</body>
+</html>

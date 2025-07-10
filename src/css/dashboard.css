@@ -1,0 +1,197 @@
+/* src/css/dashboard.css */
+#dashboard {
+    padding: 2rem;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.dashboard-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px; /* Espacio para el wrap */
+}
+
+.dashboard-header div {
+    display: flex;
+    gap: 1rem; /* Espacio entre botones */
+    flex-wrap: wrap;
+}
+
+.dashboard-header button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-pet-btn, #add-stay-btn {
+    background-color: #34c759;
+    color: white;
+}
+
+#add-pet-btn:hover, #add-stay-btn:hover {
+    background-color: #28a745;
+}
+
+#logout-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+#logout-btn:hover {
+    background-color: #e04848;
+}
+
+.pets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Pet Card */
+.pet-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    text-align: center;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.pet-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.pet-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.3rem 0;
+}
+
+.pet-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Estilos específicos para el dashboard del trabajador */
+.dashboard-content {
+    margin-top: 2rem;
+}
+
+.dashboard-content h3 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Para los inputs de búsqueda en el dashboard del trabajador */
+#search-all-pets, #search-users {
+    width: calc(100% - 20px); /* Ajuste para padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive para Dashboard */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    #dashboard {
+        padding: 1.5rem;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dashboard-header h2 {
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: center;
+    }
+    .dashboard-header div {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .dashboard-header button {
+        flex-grow: 1;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .pets-container, .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+    .pet-card, .card {
+        padding: 1rem;
+    }
+    .pet-card h3, .card h4 {
+        font-size: 1.2rem;
+    }
+    .pet-card p, .card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile (480px - 767px y menor) */
+@media (max-width: 767px) {
+    #dashboard {
+        padding: 1rem;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dashboard-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .dashboard-header div {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+    .dashboard-header button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .pets-container, .card-container {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 1rem;
+    }
+    .pet-card, .card {
+        padding: 1rem;
+    }
+    .pet-card h3, .card h4 {
+        font-size: 1.1rem;
+    }
+    .pet-card p, .card p {
+        font-size: 0.8rem;
+    }
+    #search-all-pets, #search-users {
+        width: calc(100% - 10px); /* Ajuste para padding */
+        font-size: 0.9rem;
+    }
+}

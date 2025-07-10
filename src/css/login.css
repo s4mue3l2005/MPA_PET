@@ -1,0 +1,104 @@
+/* src/css/login.css */
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Usar min-height para flexibilidad */
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+    padding: 20px; /* Añadir padding para pantallas pequeñas */
+}
+
+.login-container {
+    background: white;
+    padding: 3rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+    color: #333;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+#login-form button:hover {
+    background-color: #5249d1;
+}
+
+.login-switch {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.login-switch a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-switch a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive para Login */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .login-container {
+        padding: 2.5rem 2rem;
+        max-width: 350px;
+    }
+    .login-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile (480px - 767px y menor) */
+@media (max-width: 767px) {
+    .login-container {
+        padding: 2rem 1.5rem;
+        margin: 20px; /* Para que no se pegue a los bordes */
+    }
+    .login-container h2 {
+        font-size: 1.6rem;
+    }
+    #login-form input, #login-form button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .login-switch {
+        font-size: 0.85rem;
+    }
+}

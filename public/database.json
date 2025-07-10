@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "identidad": "123456789",
+      "telefono": "555-1234",
+      "direccion": "Calle Falsa 123",
+      "email": "juan.perez@example.com",
+      "contrasena": "password123",
+      "rolId": 2
+    },
+    {
+      "id": 2,
+      "nombre": "María García",
+      "identidad": "987654321",
+      "telefono": "555-5678",
+      "direccion": "Avenida Siempre Viva 742",
+      "email": "maria.garcia@example.com",
+      "contrasena": "admin123",
+      "rolId": 1
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "worker"
+    },
+    {
+      "id": 2,
+      "name": "customer"
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "nombre": "Max",
+      "peso": 25.5,
+      "edad": 3,
+      "raza": "Labrador",
+      "temperamento": "Amigable",
+      "anotaciones": "Le gusta jugar con pelotas.",
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/05/07/10/48/dalmatian-3380020_1280.jpg"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "nombre": "Luna",
+      "peso": 5.2,
+      "edad": 2,
+      "raza": "Siamés",
+      "temperamento": "Curiosa",
+      "anotaciones": "No le gusta el agua.",
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+    }
+  ],
+  "stays": [
+    {
+      "id": 1,
+      "petId": 1,
+      "ingreso": "2025-07-15",
+      "salida": "2025-07-20",
+      "valorDia": 30000,
+      "serviciosAdicionales": ["Baño", "Paseo extra"],
+      "completada": false
+    },
+    {
+      "id": 2,
+      "petId": 2,
+      "ingreso": "2025-07-10",
+      "salida": "2025-07-12",
+      "valorDia": 25000,
+      "serviciosAdicionales": ["Alimentación especial"],
+      "completada": true
+    }
+  ]
+}

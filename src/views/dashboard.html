@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard - PetCare Center</title>
+</head>
+<body>
+    <section id="dashboard">
+        <div class="dashboard-header">
+            <h2 id="dashboard-title">Mi Dashboard</h2>
+            <div>
+                <button id="add-pet-btn" class="hidden">Agregar Mascota</button>
+                <button id="add-stay-btn" class="hidden">Registrar Estancia</button>
+                <button id="logout-btn">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <div id="customer-dashboard-content" class="dashboard-content">
+            <h3>Mis Mascotas</h3>
+            <div class="pets-container" id="pets-container">
+            </div>
+        </div>
+
+        <div id="worker-dashboard-content" class="dashboard-content hidden">
+            <h3>Gestión de Mascotas del Centro</h3>
+            <input type="text" id="search-all-pets" placeholder="Buscar mascotas por nombre o raza">
+            <div id="all-pets-container" class="pets-container">
+            </div>
+
+            <h3>Gestión de Clientes</h3>
+            <input type="text" id="search-users" placeholder="Buscar clientes por nombre o email">
+            <div id="all-users-container" class="card-container">
+            </div>
+
+            <h3>Gestión de Estancias</h3>
+            <div id="stays-container" class="card-container">
+            </div>
+        </div>
+
+        <div id="pet-form-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3 id="pet-form-title">Agregar Nueva Mascota</h3>
+                <form id="pet-form">
+                    <input type="hidden" id="pet-id">
+                    <input type="text" id="pet-name" placeholder="Nombre de la mascota" required />
+                    <input type="number" id="pet-weight" placeholder="Peso (kg)" step="0.1" required />
+                    <input type="number" id="pet-age" placeholder="Edad (años)" required min="0" />
+                    <input type="text" id="pet-breed" placeholder="Raza" required />
+                    <input type="text" id="pet-temperament" placeholder="Temperamento" required />
+                    <textarea id="pet-notes" placeholder="Anotaciones (opcional)"></textarea>
+                    <input type="url" id="pet-image" placeholder="URL de imagen (opcional)" />
+                    <div class="form-buttons">
+                        <button type="submit">Guardar</button>
+                        <button type="button" id="cancel-pet-form">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="stay-form-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3 id="stay-form-title">Registrar Nueva Estancia</h3>
+                <form id="stay-form">
+                    <input type="hidden" id="stay-id">
+                    <label for="stay-pet-select">Mascota:</label>
+                    <select id="stay-pet-select" required></select>
+                    
+                    <label for="stay-ingreso">Fecha de Ingreso:</label>
+                    <input type="date" id="stay-ingreso" required>
+                    
+                    <label for="stay-salida">Fecha de Salida:</label>
+                    <input type="date" id="stay-salida" required>
+                    
+                    <label for="stay-valor-dia">Valor por Día ($):</label>
+                    <input type="number" id="stay-valor-dia" min="0" required>
+                    <p>Valor Total Estimado: <span id="stay-total-estimate" class="total-value"></span></p>
+                    
+                    <label for="stay-services">Servicios Adicionales (separados por coma):</label>
+                    <input type="text" id="stay-services">
+                    
+                    <label for="stay-completed" class="checkbox-label hidden" id="stay-completed-label">
+                        <input type="checkbox" id="stay-completed"> Completada
+                    </label>
+
+                    <div class="form-buttons">
+                        <button type="submit">Guardar</button>
+                        <button type="button" id="cancel-stay-form">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/dashboard-init.js"></script>
+    <script type="module" src="../js/customer.js"></script>
+    <script type="module" src="../js/worker.js"></script>
+</body>
+</html>
