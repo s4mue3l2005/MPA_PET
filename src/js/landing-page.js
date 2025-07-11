@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctaRegisterButton = document.getElementById('cta-register');
 
     if (goToLoginButton) {
-        goToLoginButton.addEventListener('click', () => { window.location.href = './views/login.html'; });
+        goToLoginButton.addEventListener('click', () => { window.location.href = './src/views/login.html'; });
     }
     if (goToRegisterButton) {
-        goToRegisterButton.addEventListener('click', () => { window.location.href = './views/register.html'; });
+        goToRegisterButton.addEventListener('click', () => { window.location.href = './src/views/register.html'; });
     }
     if (ctaLoginButton) {
-        ctaLoginButton.addEventListener('click', () => { window.location.href = './views/login.html'; });
+        ctaLoginButton.addEventListener('click', () => { window.location.href = './src/views/login.html'; });
     }
     if (ctaRegisterButton) {
-        ctaRegisterButton.addEventListener('click', () => { window.location.href = './views/register.html'; });
+        ctaRegisterButton.addEventListener('click', () => { window.location.href = './src/views/register.html'; });
     }
 });

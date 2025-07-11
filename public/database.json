@@ -49,6 +49,16 @@
       "email": "santiago@example.com",
       "contrasena": "123456",
       "rolId": 2
+    },
+    {
+      "id": "3c75",
+      "nombre": "Steven Marimon",
+      "identidad": "1111111111111111111111111111111111111111",
+      "telefono": "3234823444",
+      "direccion": "cra 16·46-12",
+      "email": "stivsitoo17@gmail.com",
+      "contrasena": "1234567890",
+      "rolId": 2
     }
   ],
   "roles": [
@@ -93,6 +103,16 @@
       "anotaciones": "El perrito es inteligente, juega ajedrez.",
       "userId": "15f6",
       "id": "eda8"
+    },
+    {
+      "id": "1e89",
+      "nombre": "Gilber",
+      "peso": 18,
+      "edad": 12,
+      "raza": "Golden Retriever",
+      "temperamento": "Pasivo-Agresivo",
+      "anotaciones": "Tratenlo bonito, es viejito",
+      "userId": "3c75"
     }
   ],
   "stays": [
