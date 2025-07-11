@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Juan Pérez",
       "identidad": "123456789",
       "telefono": "555-1234",
@@ -11,7 +11,7 @@
       "rolId": 2
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "María García",
       "identidad": "987654321",
       "telefono": "555-5678",
@@ -19,21 +19,51 @@
       "email": "maria.garcia@example.com",
       "contrasena": "admin123",
       "rolId": 1
+    },
+    {
+      "id": "9c6d",
+      "nombre": "ejemplo",
+      "identidad": "54321",
+      "telefono": "147852369",
+      "direccion": "carrera 1000 avenida 0.1",
+      "email": "ejemplo@gmail.com",
+      "contrasena": "123456",
+      "rolId": 2
+    },
+    {
+      "id": "15f6",
+      "nombre": "comas",
+      "identidad": "123",
+      "telefono": "3020020202",
+      "direccion": "carrera altos prados del norte",
+      "email": "santiago@gmail.com",
+      "contrasena": "me123",
+      "rolId": 2
+    },
+    {
+      "id": "441c",
+      "nombre": "Elias",
+      "identidad": "1045987",
+      "telefono": "3025777050",
+      "direccion": "carrera 1000 avenida 0.1",
+      "email": "santiago@example.com",
+      "contrasena": "123456",
+      "rolId": 2
     }
   ],
   "roles": [
     {
-      "id": 1,
+      "id": "1",
       "name": "worker"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "customer"
     }
   ],
   "pets": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "nombre": "Max",
       "peso": 25.5,
@@ -44,7 +74,7 @@
       "imageUrl": "https://cdn.pixabay.com/photo/2018/05/07/10/48/dalmatian-3380020_1280.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "nombre": "Luna",
       "peso": 5.2,
@@ -53,26 +83,54 @@
       "temperamento": "Curiosa",
       "anotaciones": "No le gusta el agua.",
       "imageUrl": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+    },
+    {
+      "nombre": "Pepito",
+      "peso": 12,
+      "edad": 1,
+      "raza": "Perro",
+      "temperamento": "Pacifico",
+      "anotaciones": "El perrito es inteligente, juega ajedrez.",
+      "userId": "15f6",
+      "id": "eda8"
     }
   ],
   "stays": [
     {
-      "id": 1,
+      "id": "1",
       "petId": 1,
       "ingreso": "2025-07-15",
       "salida": "2025-07-20",
       "valorDia": 30000,
-      "serviciosAdicionales": ["Baño", "Paseo extra"],
+      "serviciosAdicionales": [
+        "Baño",
+        "Paseo extra"
+      ],
       "completada": false
     },
     {
-      "id": 2,
+      "id": "2",
       "petId": 2,
       "ingreso": "2025-07-10",
       "salida": "2025-07-12",
       "valorDia": 25000,
-      "serviciosAdicionales": ["Alimentación especial"],
+      "serviciosAdicionales": [
+        "Alimentación especial"
+      ],
       "completada": true
+    },
+    {
+      "id": "a076",
+      "petId": 1,
+      "ingreso": "1552-04-15",
+      "salida": "2002-10-10",
+      "valorDia": 5000,
+      "serviciosAdicionales": [
+        "1",
+        "1",
+        "1"
+      ],
+      "completada": false
     }
   ]
 }

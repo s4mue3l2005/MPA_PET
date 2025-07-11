@@ -20,7 +20,7 @@ export const checkAuthAndRedirect = (currentPage) => {
 
     // Simple guard para 404.html si la URL no coincide con las rutas esperadas
     const validPaths = [
-        '/', '/index.html', '/views/login.html', '/views/register.html', '/views/dashboard.html', '/404.html'
+        '/', '/index.html', '/src/views/login.html', '/src/views/register.html', '/src/views/dashboard.html', '/404.html'
     ];
     
     // Normalizar la ruta para incluir el nombre del archivo si es la raíz
